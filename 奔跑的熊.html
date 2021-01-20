@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        body {
+            position: relative;
+            background-color: rgb(22, 20, 20);
+        }
+        
+        div {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, 200%);
+            width: 200px;
+            height: 100px;
+            background: url(img/bear.png) no-repeat;
+            animation: x 1s infinite steps(8), l 5s linear forwards;
+        }
+        
+        div h4 {
+            color: rgb(218, 211, 211);
+            font-size: 36px;
+            text-align: center;
+            margin-top: -50px;
+        }
+        
+        @keyframes x {
+            0% {
+                background-position: 0 0;
+            }
+            100% {
+                background-position: -1600px 0;
+            }
+        }
+        
+        @keyframes l {
+            0% {
+                left: -200px;
+            }
+            100% {
+                left: 50%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <h4>春哥~</h4>
+    </div>
+</body>
+
+</html>
